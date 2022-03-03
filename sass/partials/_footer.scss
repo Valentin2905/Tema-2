@@ -1,0 +1,18 @@
+#website-footer {
+  background-color: $dark-blue;
+
+  .col {
+    display: flex;
+    justify-content: end;
+    padding: 0;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: $phone-max) {
+  .col {
+    justify-content: center !important;
+  }
+}

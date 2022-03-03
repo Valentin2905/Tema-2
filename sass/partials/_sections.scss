@@ -1,0 +1,320 @@
+#DownloadApp {
+  .btn {
+    margin: 10px 10px 0;
+    background-color: $pencil-blue;
+  }
+}
+
+#Scooters,
+#Scooters-II {
+  .row {
+    align-items: center;
+
+    h2 {
+      color: $orange;
+    }
+  }
+}
+
+#Scooters {
+  .ScootersImg1 {
+    width: 100px;
+    height: 100px;
+    background: url("../../assets/img/scooters.jpg") no-repeat;
+  }
+}
+
+#Scooters-II {
+  text-align: right;
+}
+
+#Seo,
+#Seo_2 {
+  .container {
+    background-color: $cement;
+    padding: 0 50px;
+
+    h2 {
+      margin-top: 50px;
+      color: $JustGreen;
+    }
+
+    .top-20 {
+      margin-top: 20px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+#Features {
+  margin-bottom: 35px;
+
+  h2 {
+    margin-bottom: 35px;
+  }
+
+  .col-md-4 {
+    padding: 15px;
+
+    .card {
+      background-color: $sky;
+
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          margin-bottom: 20px;
+        }
+
+        p {
+          margin-bottom: 0;
+          letter-spacing: -0.1px;
+        }
+
+        span {
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 10px;
+          font-size: 12px;
+          color: $blood-red;
+        }
+      }
+    }
+  }
+}
+
+#ScootersBig {
+  background: url("/assets/img/scooters-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 400px;
+}
+
+#Team {
+  margin-bottom: 30px;
+
+  .row:last-child {
+    justify-content: center;
+  }
+
+  .col-md-3 {
+    padding: 20px;
+
+    .card {
+      .card-body {
+        padding: 0;
+
+        img {
+          margin-bottom: 20px;
+        }
+
+        h3 {
+          color: $pencil-blue;
+        }
+      }
+    }
+  }
+}
+
+#main-footer {
+  background-color: $cement;
+
+  .col-md-4 {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-md-4:nth-child(2) {
+    align-items: center;
+    text-align: center;
+  }
+
+  .col-md-4:nth-child(3) {
+    align-items: flex-end;
+  }
+}
+@media (max-width: $phone-max) {
+  .mb {
+    margin-bottom: 30px;
+  }
+
+  #DownloadApp {
+    .btn {
+      margin: 3px 10px 0;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+  }
+
+  #Scooters,
+  #Scooters-II {
+    .col-md-6 {
+      padding: 0 15px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .col-md-6:nth-child(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  #Scooters-II {
+    .col-md-6:first-child {
+      margin-bottom: 0;
+    }
+
+    .col-md-6:nth-child(2) {
+      margin-bottom: 20px;
+    }
+  }
+
+  #Seo,
+  #Seo_2 {
+    .container {
+      padding: 0 20px;
+
+      h2 {
+        margin-top: 20px;
+      }
+
+      .btn {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  #Features {
+    margin-bottom: 15px;
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .card-body {
+      padding: 20px 144px;
+    }
+  }
+
+  #ScootersBig {
+    background: url("/assets/img/mob3.jpg") no-repeat;
+    margin: 15px;
+  }
+
+  #Team {
+    .col-md-3 {
+      padding: 10px 15px;
+    }
+  }
+
+  #Form {
+    .col-md-7 {
+      .card {
+        max-width: 100% !important;
+      }
+    }
+  }
+
+  #main-footer {
+    margin-bottom: 20px;
+
+    .col-md-4:first-child {
+      text-align: center;
+      padding: 0 184px 20px;
+    }
+
+    .col-md-4:nth-child(2) {
+      padding: 0 0 20px;
+    }
+
+    .col-md-4:nth-child(3) {
+      align-items: center;
+      padding: 40px 0 20px;
+    }
+  }
+}
+@media (max-width: $phone-small-max) {
+  .mb {
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 3px 12px;
+  }
+
+  #Scooters,
+  #Scooters-II {
+    .col-md-6 {
+      padding: 0 15px;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+
+    .col-md-6:nth-child(2) {
+      margin-bottom: 0;
+    }
+  }
+
+  #Scooters-II {
+    .col-md-6:first-child {
+      margin-bottom: 0;
+    }
+
+    .col-md-6:nth-child(2) {
+      margin-bottom: 10px;
+    }
+  }
+
+  #Seo,
+  #Seo_2 {
+    .container {
+      h2 {
+        margin-top: 10px;
+      }
+
+      .btn {
+        margin: 10px 0;
+      }
+    }
+  }
+
+  #Features {
+    margin-bottom: 0;
+
+    .col-md-4 {
+      padding: 10px 15px;
+
+      .card-body {
+        padding: 20px 15px;
+      }
+    }
+  }
+
+  #ScootersBig {
+    margin: 10px 15px;
+    min-height: 20px;
+    background-size: cover;
+    min-height: 204px;
+  }
+
+  #main-footer {
+    margin-bottom: 10px;
+
+    .col-md-4:first-child {
+      padding: 0 15px 10px;
+    }
+  }
+}
