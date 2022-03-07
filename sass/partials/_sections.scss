@@ -13,6 +13,10 @@
     h2 {
       color: $orange;
     }
+
+    img {
+      margin: 0 auto;
+    }
   }
 }
 
@@ -33,6 +37,7 @@
   .container {
     background-color: $cement;
     padding: 0 50px;
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.1);
 
     h2 {
       margin-top: 50px;
@@ -57,7 +62,7 @@
     margin-bottom: 35px;
   }
 
-  .col-md-4 {
+  .col-lg-4 {
     padding: 15px;
 
     .card {
@@ -106,7 +111,7 @@
     justify-content: center;
   }
 
-  .col-md-3 {
+  .col-lg-3 {
     padding: 20px;
 
     .card {
@@ -128,22 +133,22 @@
 #main-footer {
   background-color: $cement;
 
-  .col-md-4 {
+  .col-lg-4 {
     padding: 30px 0;
     display: flex;
     flex-direction: column;
   }
 
-  .col-md-4:nth-child(2) {
+  .col-lg-4:nth-child(2) {
     align-items: center;
     text-align: center;
   }
 
-  .col-md-4:nth-child(3) {
+  .col-lg-4:nth-child(3) {
     align-items: flex-end;
   }
 }
-@media (max-width: $phone-max) {
+@media (max-width: $tablet-max) {
   .mb {
     margin-bottom: 30px;
   }
@@ -160,23 +165,23 @@
 
   #Scooters,
   #Scooters-II {
-    .col-md-6 {
+    .col-lg-6 {
       padding: 0 15px;
       margin-bottom: 20px;
       text-align: left;
     }
 
-    .col-md-6:nth-child(2) {
+    .col-lg-6:nth-child(2) {
       margin-bottom: 0;
     }
   }
 
   #Scooters-II {
-    .col-md-6:first-child {
+    .col-lg-6:first-child {
       margin-bottom: 0;
     }
 
-    .col-md-6:nth-child(2) {
+    .col-lg-6:nth-child(2) {
       margin-bottom: 20px;
     }
   }
@@ -211,16 +216,17 @@
   #ScootersBig {
     background: url("/assets/img/mob3.jpg") no-repeat;
     margin: 15px;
+    background-size: cover;
   }
 
   #Team {
-    .col-md-3 {
+    .col-lg-3 {
       padding: 10px 15px;
     }
   }
 
   #Form {
-    .col-md-7 {
+    .col-lg-7 {
       .card {
         max-width: 100% !important;
       }
@@ -230,16 +236,16 @@
   #main-footer {
     margin-bottom: 20px;
 
-    .col-md-4:first-child {
+    .col-lg-4:first-child {
       text-align: center;
       padding: 0 184px 20px;
     }
 
-    .col-md-4:nth-child(2) {
+    .col-lg-4:nth-child(2) {
       padding: 0 0 20px;
     }
 
-    .col-md-4:nth-child(3) {
+    .col-lg-4:nth-child(3) {
       align-items: center;
       padding: 40px 0 20px;
     }
@@ -257,23 +263,23 @@
 
   #Scooters,
   #Scooters-II {
-    .col-md-6 {
+    .col-lg-6 {
       padding: 0 15px;
       margin-bottom: 10px;
       text-align: left;
     }
 
-    .col-md-6:nth-child(2) {
+    .col-lg-6:nth-child(2) {
       margin-bottom: 0;
     }
   }
 
   #Scooters-II {
-    .col-md-6:first-child {
+    .col-lg-6:first-child {
       margin-bottom: 0;
     }
 
-    .col-md-6:nth-child(2) {
+    .col-lg-6:nth-child(2) {
       margin-bottom: 10px;
     }
   }
@@ -294,7 +300,11 @@
   #Features {
     margin-bottom: 0;
 
-    .col-md-4 {
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .col-lg-4 {
       padding: 10px 15px;
 
       .card-body {
@@ -313,7 +323,7 @@
   #main-footer {
     margin-bottom: 10px;
 
-    .col-md-4:first-child {
+    .col-lg-4:first-child {
       padding: 0 15px 10px;
     }
   }
