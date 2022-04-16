@@ -1,3 +1,49 @@
+#Modal1,
+#Modal2 {
+  padding: 0 15px;
+
+  .modal-dialog {
+    max-width: 1000px;
+  }
+}
+
+#website-header {
+  margin-top: 80px;
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem 0;
+    list-style-type: none;
+    position: relative;
+    top: -47px;
+
+    li {
+      margin: 0 7.5px;
+    }
+
+    button {
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      padding: 0;
+      border: none;
+      border-radius: 100%;
+      background-color: #C4C4C4;
+      text-indent: -9999px;
+    }
+
+    li.slick-active button {
+      background-color: #27AE60;
+    }
+  }
+
+  p {
+    width: 40%;
+  }
+}
+
 #DownloadApp {
   .btn {
     margin: 10px 10px 0;
@@ -105,7 +151,23 @@
 }
 
 #Team {
-  margin-bottom: 30px;
+  margin-bottom: 30px; //   .slick-slide {
+  //     width: 40%;
+  // }
+  .slick-next {
+    position: absolute;
+    top: 20%;
+    left: 15px;
+    z-index: 1;
+    transform: rotate(180deg);
+  }
+
+  .slick-prev {
+    position: absolute;
+    top: 20%;
+    right: 15px;
+    z-index: 1;
+  }
 
   .row:last-child {
     justify-content: center;
@@ -119,7 +181,7 @@
         padding: 0;
 
         img {
-          margin-bottom: 20px;
+          margin: 0 auto;
         }
 
         h3 {
@@ -130,6 +192,140 @@
   }
 }
 
+#Testimonials {
+  margin-bottom: 50px;
+
+  .col-lg-8 {
+    margin: 0 auto;
+
+    .slider div {
+      border-radius: 0 50px;
+      background: #98E6D6;
+
+      .blockquote {
+        padding: 123px 100px;
+        margin-bottom: 0;
+
+        p {
+          margin-bottom: 15px;
+        }
+
+        .blockquote-footer {
+          color: $pencil-blue;
+        }
+
+        .blockquote-footer::before {
+          content: none;
+        }
+      }
+    }
+
+    .slider::before {
+      content: url("/assets/img/quote.png");
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      z-index: 1;
+    }
+
+    .slider::after {
+      content: url("/assets/img/quote.png");
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+#FAQ {
+  background-color: $cement;
+
+  h2 {
+    padding: 50px 0 30px;
+  }
+
+  .panel-group .panel {
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+
+    .panel-heading {
+      padding: 0;
+      border-radius: 0;
+      color: #212121;
+      background-color: #FAFAFA;
+
+      .panel-title {
+        font-size: 24px;
+        background: #F7C3A0;
+        border-radius: 10px;
+        margin-bottom: 0;
+
+        a {
+          padding: 15px 25px;
+          text-decoration: none;
+          color: $JustBlack;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .more-less {
+            float: right;
+            color: #212121;
+          }
+        }
+
+        a:after {
+          content: "";
+          position: relative;
+          margin-left: 2px;
+          top: 1px;
+          display: inline-block;
+          font-family: FontAwesome;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 1;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          float: right;
+          transition: transform 0.25s linear;
+          -webkit-transition: -webkit-transform 0.25s linear;
+        }
+
+        a[aria-expanded="true"]:after {
+          content: "\f068";
+          -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+        }
+
+        a[aria-expanded="false"]:after {
+          content: "\f067";
+          -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+        }
+      }
+    }
+
+    .panel-collapse {
+      .panel-body {
+        background: #FFD6BA;
+        border-radius: 0 0 10px 10px;
+        margin: 0 25px;
+        padding: 20px;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .panel:last-child {
+    margin-bottom: 50px;
+  }
+}
+
 #main-footer {
   background-color: $cement;
 
@@ -137,6 +333,12 @@
     padding: 30px 0;
     display: flex;
     flex-direction: column;
+
+    ul {
+      li {
+        margin-bottom: 4px;
+      }
+    }
   }
 
   .col-lg-4:nth-child(2) {
@@ -149,8 +351,19 @@
   }
 }
 @media (max-width: $tablet-max) {
-  .mb {
+  .mb,
+  .mb-head {
     margin-bottom: 30px;
+  }
+
+  #website-header {
+    .slick-dots {
+      top: -77px;
+    }
+
+    p {
+      width: 64%;
+    }
   }
 
   #DownloadApp {
@@ -225,6 +438,20 @@
     }
   }
 
+  #Testimonials {
+    .col-lg-8 {
+      .slider::before {
+        top: 10px;
+        left: 10px;
+      }
+
+      .slider::after {
+        right: 10px;
+        bottom: 10px;
+      }
+    }
+  }
+
   #Form {
     .col-lg-7 {
       .card {
@@ -252,13 +479,20 @@
   }
 }
 @media (max-width: $phone-small-max) {
-  .mb {
+  .mb,
+  .mb-head {
     margin-bottom: 10px;
   }
 
   .btn {
     font-size: 14px;
     padding: 3px 12px;
+  }
+
+  #website-header {
+    p {
+      width: 98%;
+    }
   }
 
   #Scooters,
@@ -325,6 +559,23 @@
 
     .col-lg-4:first-child {
       padding: 0 15px 10px;
+    }
+  }
+
+  #Testimonials {
+    .col-lg-8 {
+      .slider div {
+        .blockquote {
+          padding: 100px 50px;
+        }
+      }
+    }
+  }
+
+  #FAQ {
+    a {
+      font-size: 22px;
+    line-height: 22px;
     }
   }
 }

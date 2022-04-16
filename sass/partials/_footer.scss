@@ -3,7 +3,7 @@
 
   .col {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 0;
 
     p {
@@ -11,7 +11,7 @@
     }
   }
 }
-@media (max-width: $phone-max) {
+@media (max-width: $tablet-max) {
   .col {
     justify-content: center !important;
   }

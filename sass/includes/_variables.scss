@@ -15,11 +15,12 @@ $secondary-color: $sunny-yellow;
 $primary-text-color: $JustBlack;
 $secondary-text-color: $JustWhite; // fonts
 $primary-font: "Open Sans", sans-serif;
-$secondary-font: "MyWebFont", sans-serif; // sizes
+$secondary-font: "Roboto", sans-serif; // sizes
 $container: 1200px;
 $container-laptop: 1000px;
 $container-tablet: 750px;
 $laptop-max: 1367px;
 $tablet-max: 1024px;
-$phone-max: 1024px;
+$phone-max: 768px;
 $phone-small-max: 400px;
+$custom-size: 575px;

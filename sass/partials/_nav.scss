@@ -1,3 +1,111 @@
 .navbar {
-  padding: 16px;
+  font-family: $secondary-font;
+  padding: 15px;
+  transition: padding 0.5s;
+
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+
+    .nav-icon {
+      display: block;
+      width: 30px;
+      height: 2px;
+      margin: 6px auto;
+      background: #1ABC9C;
+      transition: all 0.6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+    }
+  }
+  /* rotate first .nav-icon */
+  .navbar-toggler[aria-expanded="true"] .nav-icon:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  /* hide second .nav-icon */
+  .navbar-toggler[aria-expanded="true"] .nav-icon:nth-of-type(2) {
+    opacity: 0;
+  }
+  /* rotate third .nav-icon */
+  .navbar-toggler[aria-expanded="true"] .nav-icon:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .navbar-toggler[aria-expanded="false"] .nav-icon {
+    transform: none;
+    opacity: 1;
+  }
+
+  .navbar-toggler .nav-icon {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 6px auto;
+    background: #1ABC9C;
+    transition: all 0.6s cubic-bezier(0.250, 0.100, 0.250, 1.000);
+  }
+  /* rotate first .nav-icon */
+  .navbar-toggler[aria-expanded="true"] .nav-icon:first-of-type {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+  /* hide second .nav-icon */
+  .navbar-toggler[aria-expanded="true"] .nav-icon:nth-of-type(2) {
+    opacity: 0;
+  }
+  /* rotate third .nav-icon */
+  .navbar-toggler[aria-expanded="true"] .nav-icon:last-of-type {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .navbar-toggler[aria-expanded="false"] .nav-icon {
+    transform: none;
+    opacity: 1;
+  }
+
+  .navbar-nav {
+    align-items: center;
+
+    .nav-item {
+      display: flex;
+
+      .nav-link {
+        padding: 0 15px;
+        font-size: 18px;
+        font-weight: normal;
+      }
+
+      .btn {
+        padding: 7px 25px !important;
+        background-color: #1ABC9C;
+        color: #fff;
+        font-size: 18px;
+        line-height: 25px;
+        border: none;
+
+        &:active,
+        &:focus,
+        &:hover {
+          color: $secondary-text-color;
+          background-color: $blood-red;
+        }
+      }
+    }
+  }
+}
+
+.navbar.tiny {
+  padding: 5px 15px;
+}
+@media (max-width: $container-laptop) {
+  .navbar {
+    .navbar-nav {
+      align-items: end;
+
+      .nav-link {
+        padding: 7.5px 0 !Important;
+      }
+
+      .btn {
+        margin-top: 15px;
+      }
+    }
+  }
 }
